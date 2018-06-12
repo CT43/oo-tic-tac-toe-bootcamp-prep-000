@@ -20,15 +20,9 @@ class TicTacToe
   end
 
 def play
-  while !over?
-    turn
-  
-  if won?
-    puts "Congratulations #{winner(@board)}!"
-  elsif draw?
-    puts "Cat's Game!"
+    turn until over?
+    puts winner ? "Congratulations #{winner}!" : "Cat's Game!"
   end
-end
 
 WIN_COMBINATIONS = [
   [0,1,2],
