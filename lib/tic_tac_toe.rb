@@ -27,7 +27,7 @@ def play
     puts "Congratulations #{winner(@board)}!"
   elsif draw?
     puts "Cat's Game!"
-  
+  end
 end
 
 WIN_COMBINATIONS = [
